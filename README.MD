@@ -63,8 +63,8 @@ It is recommended to run this toolset in a virtual environment (`venv`) to keep 
 
 ### ⚠️ Troubleshooting & Placement
 The Creality CFS is highly sensitive to the physical positioning of the tags. If the printer is not reading your custom tags:
-1. **Alignment:** Ensure the tag is placed exactly where the original tag was (inner side of the spool flange).
-2. **Interference:** If using plastic spools with high carbon content or metal spools, you may need "on-metal" shielded tags.
+1. **Alignment:** Ensure the tag is placed exactly where the original tag is.
+2. **Interference:** if detection is slow (or none), you may need "on-metal" shielded tags.
 3. **Encrypted Data:** Ensure the data written to the tag matches a valid material entry in the `db/` folder.
 
 ---
@@ -76,7 +76,7 @@ Contributions are welcome! If you find new material IDs or have code improvement
 
 ### 📜 License
 **MIT License**
-Copyright (c) 2024 Aladin-Sane
+Copyright (c) 2026 Aladin-Sane
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
