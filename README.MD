@@ -29,11 +29,11 @@ The `pn533` and `nfc` kernel drivers often claim the device before the user-spac
 
 ### 🐍 Python Environment Setup
 It is recommended to run this toolset in a virtual environment (`venv`) to keep your system clean.
-1. `git clone https://github.com`
+1. `git clone https://github.com/Aladin-Sane/Creality-RFID-Tools`
 2. `cd Creality-RFID-Tools`
 3. `python -m venv venv`
 4. `source venv/bin/activate`
-5. `pip install pyscard`
+5. `pip install pyscard pycryptodome`
 
 ---
 
