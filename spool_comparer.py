@@ -59,7 +59,7 @@ def scan_tag(label):
 def main():
     print("=== OpenCFS Spool Comparison Tool ===")
     tags = {}
-    order = ["ORIGINAL Side 1", "ORIGINAL Side 2", "OWN Spool Side 1", "OWN Spool Side 2"]
+    order = ["CREALITY Spool Side 1", "CREALITY Spool Side 2", "OWN Spool Side 1", "OWN Spool Side 2"]
     
     for label in order:
         res = scan_tag(label)

@@ -1,4 +1,4 @@
-import time
+yimport time
 import sys
 import json
 import os

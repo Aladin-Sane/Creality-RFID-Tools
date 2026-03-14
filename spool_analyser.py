@@ -5,7 +5,7 @@ from smartcard.CardType import AnyCardType
 
 def analyse_original_spool():
     print("\n" + "="*50)
-    print("🚀 CREALITY SPOOL ANALYZER")
+    print("CREALITY SPOOL ANALYZER")
     print("="*50)
     print("[!] Please place the tag on the scanner...")
     
@@ -42,7 +42,7 @@ def analyse_original_spool():
         sak_hex = " ".join([f"{x:02X}" for x in sak_res])
 
         print("\n" + "="*50)
-        print("📊 ANALYSE ORIGINELE CREALITY SPOOL")
+        print("ANALISYS SPOOL")
         print("="*50)
         print(f"🆔 UID:  {uid_hex}")
         print(f"📜 ATR:  {atr_hex}")
