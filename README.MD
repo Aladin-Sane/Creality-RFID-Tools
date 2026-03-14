@@ -61,6 +61,11 @@ It is recommended to run this toolset in a virtual environment (`venv`) to keep 
 
 ---
 
+### Examples
+
+See examples.txt
+---
+
 ### ⚠️ Troubleshooting & Placement
 The Creality CFS is highly sensitive to the physical positioning of the tags. If the printer is not reading your custom tags:
 1. **Alignment:** Ensure the tag is placed exactly where the original tag is.

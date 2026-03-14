@@ -1,0 +1,157 @@
+========================================================================================================================
+python tag_reader.py
+========================================================================================================================
+[*] Loaded 56 material definitions.
+>>> OpenCFS Reader Ready. Waiting for Spool...
+>>> Press Ctrl+C to exit.
+
+
+═════════════════════════════════════════════
+ 📦 MATERIAL: Generic ABS
+ 🎨 COLOR:    Black
+ ⚖️  WEIGHT:   1.0kg
+ 🔢 SERIAL:   360915
+ 🔒 STATUS:   UNLOCKED (Writable)
+═════════════════════════════════════════════
+
+[!] Spool detected. Remove tag to scan next...
+
+
+
+
+
+
+========================================================================================================================
+python tag_writer.py 
+========================================================================================================================
+==========================================
+   OpenCFS PRO: TWIN Spool Provisioner    
+==========================================
+
+--- MATERIAL ---
+  1) CR-ABS              	  2) CR-Nylon            
+  3) CR-PETG             	  4) CR-PLA              
+  5) CR-PLA Carbon       	  6) CR-PLA Fluo         
+  7) CR-PLA Matte        	  8) CR-Silk             
+  9) CR-TPU              	 10) CR-Wood             
+ 11) EN-PLA+             	 12) ENDER FAST PLA      
+ 13) Ender-PLA           	 14) Generic ABS         
+ 15) Generic ASA         	 16) Generic ASA-CF      
+ 17) Generic BVOH        	 18) Generic HIPS        
+ 19) Generic PA          	 20) Generic PA-CF       
+ 21) Generic PA12-CF     	 22) Generic PA6-CF      
+ 23) Generic PA6-GF      	 24) Generic PA612-CF    
+ 25) Generic PAHT-CF     	 26) Generic PC          
+ 27) Generic PCTG        	 28) Generic PET         
+ 29) Generic PET-CF      	 30) Generic PETG        
+ 31) Generic PETG-CF     	 32) Generic PETG-GF     
+ 33) Generic PLA         	 34) Generic PLA-CF      
+ 35) Generic PLA-Silk    	 36) Generic PP          
+ 37) Generic PP-CF       	 38) Generic PPS         
+ 39) Generic PPS-CF      	 40) Generic PVA         
+ 41) Generic Support for PA	 42) Generic Support for PLA
+ 43) Generic TPU         	 44) Generic TPU 64D     
+ 45) HP Ultra PLA        	 46) HP-ASA              
+ 47) HP-TPU              	 48) Hyper ABS           
+ 49) Hyper PAHT-CF       	 50) Hyper PC            
+ 51) Hyper PETG          	 52) Hyper PLA           
+ 53) Hyper PLA-CF        	 54) Hyper PPA-CF        
+ 55) PLA-LW              	 56) Soleyin Ultra PLA   
+
+Select Material (1-56): 33
+
+--- COLOR ---
+  1) Aquamarine          	  2) Beige               
+  3) Black               	  4) Blue                
+  5) Brown               	  6) Chocolate           
+  7) Coral               	  8) Crimson             
+  9) Cyan                	 10) DarkOrange          
+ 11) DarkRed             	 12) DeepPink            
+ 13) DeepSkyBlue         	 14) DimGray             
+ 15) FireBrick           	 16) ForestGreen         
+ 17) Gold                	 18) Green               
+ 19) Grey                	 20) HotPink             
+ 21) Indigo              	 22) Ivory               
+ 23) Khaki               	 24) Lavender            
+ 25) LightGray           	 26) Lime                
+ 27) Magenta             	 28) Maroon              
+ 29) MidnightBlue        	 30) Mint                
+ 31) Navy                	 32) Olive               
+ 33) Orange              	 34) Orchid              
+ 35) Peru                	 36) Plum                
+ 37) Purple              	 38) Red                 
+ 39) RoyalBlue           	 40) Sienna              
+ 41) Silver              	 42) SkyBlue             
+ 43) SlateGray           	 44) SpringGreen         
+ 45) SteelBlue           	 46) Tan                 
+ 47) Teal                	 48) Tomato              
+ 49) Turquoise           	 50) Violet              
+ 51) White               	 52) Yellow              
+
+Select Color (1-52): 4
+
+--- WEIGHT ---
+  1) 1.0 kg (Code: 0330)	  2) 0.5 kg (Code: 0165)
+  3) 0.25 kg (Code: 0082)	
+Select Weight (1-3): 1
+
+[*] TWIN PROFILE READY
+[*] Spool Serial: 070483
+[*] Material:     Generic PLA
+[*] Color:        Blue
+
+>>> [STEP] Place TWIN TAG #1 on reader...
+[*] Writing to 3526A608...
+✅ TWIN TAG #1 Complete.
+>>> PLEASE REMOVE TAG.
+
+>>> [STEP] Place TWIN TAG #2 on reader...
+[*] Writing to 3526A608...
+✅ TWIN TAG #2 Complete.
+>>> PLEASE REMOVE TAG.
+
+🎉 SUCCESS! Twin Spool 070483 is ready.
+[!] Ensure tags are placed at the same rotation on both sides.
+
+
+
+
+
+========================================================================================================================
+python tag_check.py
+========================================================================================================================
+
+[🔍] ANALYSE TAG: 3526A608
+═════════════════════════════════════════════
+ ✅  STATUS: KLAAR VOOR PRINTER
+     De tag is correct beveiligd met de Creality Key B.
+     De printer zou deze tag MOETEN herkennen.
+═════════════════════════════════════════════
+
+
+
+
+========================================================================================================================
+python spool_validator.py 
+========================================================================================================================
+
+==========================================
+      OpenCFS: TWIN SPOOL VALIDATOR       
+==========================================
+
+>>> [STEP] Place OWN SIDE 1 (LEFT) on reader...
+[*] OWN SIDE 1 (LEFT) (3526A608) Captured.
+
+>>> [STEP] Place OWN SIDE 2 (RIGHT) on reader...
+[*] OWN SIDE 2 (RIGHT) (3526A608) Captured.
+
+============================================================
+BLOCK      | SIDE 1 DATA          | MATCH?
+------------------------------------------------------------
+Block 4     | 9C 58 1C 49 0D E8 ED | YES ✅
+Block 5     | DF E1 DA 97 AE D5 28 | YES ✅
+Block 6     | B3 4C E8 FE 8E A0 58 | YES ✅
+============================================================
+
+🎉 VALIDATION SUCCESS: These tags are perfect twins.
+[!] Final Step: Place them at the EXACT same rotation on the spool.
